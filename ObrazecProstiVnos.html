@@ -18,7 +18,8 @@
 </head>
 <body>
 <p>Kliknite gumb Submit in si oglejte rezutat v Matomu (UA DEMO), spreminjajte podatke in ponovljajte vajo.</p>
-    <form action="https://ua01.matomo.cloud/matomo.php?" method="post">
+<!--    <form action="https://ua01.matomo.cloud/matomo.php?" method="post" target="_blank"> -->
+    <form action="https://ua01.matomo.cloud/matomo.php" method="post">
         <input type="hidden" name="rec" value="1" />
         <input type="hidden" name="apiv" value="1" />
         <input type="hidden" name="idsite" value="1" />
@@ -42,7 +43,7 @@
 			</tr>
             <tr>
                 <td><span title="urlref">URL Reference</span></td>
-                <td><input type="text" name="urlref" value="https://www.referenca.sem" /></td>
+                <td><input type="text" size="64" name="urlref" value="https://www.referenca.sem" /></td>
             </tr>
             <tr>
                 <td><span title="ua">User-Agent</span></td>
@@ -77,16 +78,17 @@
             </tr>
             <tr>
                 <td><span title="_rcn / _rck">Campaign & Keyword</span></td>
-                <td><input type="text" name="_rcn" value="Demo-UA" />&nbsp;&nbsp;&nbsp;<input type="text" name="_rck" value="Demo-UA-Matomo-2021" /></td>
+                <td><input type="text" size="30" name="_rcn" value="Demo-UA" />&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="_rck" value="Demo-UA-Matomo-2021" /></td>
             </tr>
             <tr>
                 <td><span title="goal / revenue">Goal & Revenue</span></td>
-                <td><input type="text" name="idgoal" value="3" />&nbsp;&nbsp;&nbsp;
-                    <input type="text" name="revenue" value="3" /></td>
+                <td><input type="text" size="30"  name="idgoal" value="3" />&nbsp;&nbsp;&nbsp;
+                    <input type="text" size="30" name="revenue" value="3" /></td>
             </tr>
         </table>
-        <input type="submit" />
+        <input type="submit"  value="Submit (Posreduj v Matomo)" />
     </form>
+<p>&#268;e se vam odpre dodatno okno, ga zaprite. &#268;e se spremeni to okno, pritisnite Back/Nazaj v brskalniku.</p>
 <p>---</p>
 <p><a href="index.html">Nazaj na vstopno stran</a></p>
 <p><a href="kazalo.html">Kliknite za kazalo vseh strani</a></p>
