@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="sl-SI">
+<meta name="robots" content="noindex">
+<meta name="description" content="Obrazec za poljubno statistiko s prostim vnosom">
+<meta name="keywords" content="Obrazec, test, delavnica, Matomo, statistika, matomodelavnica">
+<meta name="author" content="Miso">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Obrazec za sledenje, prosti vnost parametrov</title>
+	<style>
+		body {font-family:Arial; font-size:12px;}
+		input  {font-family:Arial; font-size:14px;}
+		select  {font-family:Arial; font-size:14px;}
+	</style>
+<base href="https://MatomoDelavnica.github.io/demo/" target="_Self">
+</head>
+<body>
+<p>Kliknite gumb Submit in si oglejte rezutat v Matomu (UA DEMO), spreminjajte podatke in ponovljajte vajo.</p>
+    <form action="https://ua01.matomo.cloud/matomo.php?" method="post">
+        <input type="hidden" name="rec" value="1" />
+        <input type="hidden" name="apiv" value="1" />
+        <input type="hidden" name="idsite" value="1" />
+        <table>
+            <tr>
+                <td><span title="url">URL visited</span></td>
+                <td><input type="text" size="64" name="url" value="https://MatomoDelavnica.github.io/demo/obrazec.html" /></td>
+            </tr>
+            <tr>
+                <td><span title="action_name">Action Name</span></td>
+                <td><input type="text" size="64" name="action_name" value="Obrazec s prostim vnosom" /></td>
+            </tr>
+			<tr>
+				<td><span title="">New Visit</span></td>
+				<td>
+					<select name="new_visit">
+						<option value="">No</option>
+						<option value="1">Yes</option>
+					</select>
+				</td>
+			</tr>
+            <tr>
+                <td><span title="urlref">URL Reference</span></td>
+                <td><input type="text" name="urlref" value="https://www.referenca.sem" /></td>
+            </tr>
+            <tr>
+                <td><span title="ua">User-Agent</span></td>
+                <td>
+				<select name="ua" size="1">
+					<option value="Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36">Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36</option>
+					<option value="Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0">Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0</option>
+					<option value="Mozilla/4.0 (Compatible; MSIE 8.0; Windows NT 5.2; Trident/6.0)">Mozilla/4.0 (Compatible; MSIE 8.0; Windows NT 5.2; Trident/6.0)</option>
+					<option value="Mozilla/5.0 (compatible, MSIE 11, Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko">Mozilla/5.0 (compatible, MSIE 11, Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko</option>
+					<option value="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/4.0; InfoPath.2; SV1; .NET CLR 2.0.50727; WOW64)">Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/4.0; InfoPath.2; SV1; .NET CLR 2.0.50727; WOW64)</option>
+					<option value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A</option>
+					<option value="Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5355d Safari/8536.25">Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5355d Safari/8536.25</option>
+				</select>
+				</td>
+            </tr>
+            <tr>
+                <td><span title="lang">Language</span></td>
+                <td>
+				<select name="lang" size="1">
+					<option value="sl-SI">sl-SI</option>
+					<option value="de-de">de-de</option>
+					<option value="de-CH">de-CH</option>
+					<option value="en-US">en-US</option>
+					<option value="en-gb">en-gb</option>
+					<option value="fr-fr">fr-fr</option>
+				</select>
+				</td>
+            </tr>
+            <tr>
+                <td><span title="res">Screen Resolution</span></td>
+                <td><input type="text" name="res" value="1000x500" /></td>
+            </tr>
+            <tr>
+                <td><span title="_rcn / _rck">Campaign & Keyword</span></td>
+                <td><input type="text" name="_rcn" value="Demo-UA" />&nbsp;&nbsp;&nbsp;<input type="text" name="_rck" value="Demo-UA-Matomo-2021" /></td>
+            </tr>
+            <tr>
+                <td><span title="goal / revenue">Goal & Revenue</span></td>
+                <td><input type="text" name="idgoal" value="3" />&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="revenue" value="3" /></td>
+            </tr>
+        </table>
+        <input type="submit" />
+    </form>
+<p>---</p>
+<p><a href="index.html">Nazaj na vstopno stran</a></p>
+<p><a href="kazalo.html">Kliknite za kazalo vseh strani</a></p>
+<p>---</p>
+<p>(c) matomodelavnica, marec 2021</p>
+<!-- Matomo -->
+<img src="https://ua01.matomo.cloud/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" />
+<!-- End Matomo Code -->
+</body>
+</html>

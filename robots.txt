@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /hvala.html
+Disallow: /ObrazecProstiVnos.html
+Sitemap: https://matomodelavnica.github.io/demo/sitemap.xml
+
