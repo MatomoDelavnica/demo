@@ -26,8 +26,8 @@ Hvala za nakup (brez cilja - ni konfiguriran).
         src="https://ua01.matomo.cloud/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily="
         ></iframe>
 <div id="optout-form">
-  <p>Prosimo%2C%20da%20dovolite%20namestitev%20analiti%C4%8Dnih%20pi%C5%A1kotkov%20Matomo%20in%20s%20tem%20zbiranje%20anonimiziranih%20podatkov%20o%20va%C5%A1ih%20obiskih%20za%20potrebe%20usposabljanja.%20Pi%C5%A1kotke%20lahko%20kadarkoli%20izbri%C5%A1ete.</p>
-  <p>%C4%8Ce%20namestitve%20analiti%C4%8Dnih%20pi%C5%A1kotkov%20ne%20dovolite%2C%20odzna%C4%8Dite%20to%20izbiro%20in%20bo%20name%C5%A1%C4%8Den%20zgolj%20pi%C5%A1kotek%20o%20tej%20va%C5%A1i%20izbiri.</p>
+  <p>Prosimo, da dovolite namestitev analiti&#269;nih pi&#353;kotkov Matomo in s tem zbiranje anonimiziranih podatkov o va&#353;ih obiskih za potrebe usposabljanja. Pi&#353;kotke lahko kadarkoli izbri&#353;ete.<br />
+  <p>&#268;e namestitve analiti&#269;nih pi&#353;kotkov ne dovolite, odzna&#269;ite to izbiro in bo name&#353;&#269;en zgolj pi&#353;kotek o tej va&#353;i izbiri.<br />
 <p><a href="PolitikaZasebnostiGDPR.html">Politika zasebnosti</a></p>
 
   <p>
@@ -41,9 +41,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     _paq.push([function() {
       element.checked = !this.isUserOptedOut();
       document.querySelector('label[for=optout] strong').innerText = this.isUserOptedOut()
-        ? 'Ne%20strinajte%20se%20z%20uporabo%20analiti%C4%8Dnih%20pi%C5%A1kotkov.%20Kliknite%20za%20podelitev%20soglasja%20k%20uporabi%20pi%C5%A1kotkov.'
-        : 'Strinajte%20se%20z%20uporabo%20pi%C5%A1kotkov.%20Kliknite%20za%20odvzem%20soglasja.';
-    }]);
+        ? 'Ne strinajte se z uporabo analiti&#269;nih pi&#353;kotkov. Kliknite za podelitev soglasja k uporabi pi&#353;kotkov.'
+        : 'Strinajte se z uporabo pi&#353;kotkov. Kliknite za odvzem soglasja.';
+     }]);
   }
 
   var optOut = document.getElementById("optout");
