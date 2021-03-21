@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="sl-SI">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Izdelek prodan">
+<meta name="keywords" content="Izdelek, prodan, matomodelavnica">
+<meta name="author" content="Miso">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="https://MatomoDelavnica.github.io/demo/" target="_Self">
+<title>Izdelek prodan</title>
+</head>
+<body>
+<h1>
+Hvala za nakup (brez cilja - ni konfiguriran).
+</h1>
+<p>---</p>
+<p><a href="index.html">Nazaj na vstopno stran</a></p>
+<p><a href="indexGDPR.html">Nazaj na vstopno stran GDPR</a></p>
+<p><a href="kazalo.html">Kliknite za kazalo vseh strani</a></p>
+<p><a href="kazaloGDPR.html">Kliknite za kazalo vseh strani GDPR</a></p>
+<p>---</p>
+<p>(c) matomodelavnica, marec 2021</p>
+<iframe
+        style="border: 0; height: 200px; width: 1000px;"
+        src="https://ua01.matomo.cloud/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily="
+        ></iframe>
+<div id="optout-form">
+  <p>Prosimo%2C%20da%20dovolite%20namestitev%20analiti%C4%8Dnih%20pi%C5%A1kotkov%20Matomo%20in%20s%20tem%20zbiranje%20anonimiziranih%20podatkov%20o%20va%C5%A1ih%20obiskih%20za%20potrebe%20usposabljanja.%20Pi%C5%A1kotke%20lahko%20kadarkoli%20izbri%C5%A1ete.</p>
+  <p>%C4%8Ce%20namestitve%20analiti%C4%8Dnih%20pi%C5%A1kotkov%20ne%20dovolite%2C%20odzna%C4%8Dite%20to%20izbiro%20in%20bo%20name%C5%A1%C4%8Den%20zgolj%20pi%C5%A1kotek%20o%20tej%20va%C5%A1i%20izbiri.</p>
+<p><a href="PolitikaZasebnostiGDPR.html">Politika zasebnosti</a></p>
+
+  <p>
+    <input type="checkbox" id="optout" />
+    <label for="optout"><strong></strong></label>
+  </p>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+  function setOptOutText(element) {
+    _paq.push([function() {
+      element.checked = !this.isUserOptedOut();
+      document.querySelector('label[for=optout] strong').innerText = this.isUserOptedOut()
+        ? 'Ne%20strinajte%20se%20z%20uporabo%20analiti%C4%8Dnih%20pi%C5%A1kotkov.%20Kliknite%20za%20podelitev%20soglasja%20k%20uporabi%20pi%C5%A1kotkov.'
+        : 'Strinajte%20se%20z%20uporabo%20pi%C5%A1kotkov.%20Kliknite%20za%20odvzem%20soglasja.';
+    }]);
+  }
+
+  var optOut = document.getElementById("optout");
+  optOut.addEventListener("click", function() {
+    if (this.checked) {
+      _paq.push(['forgetUserOptOut']);
+    } else {
+      _paq.push(['optUserOut']);
+    }
+    setOptOutText(optOut);
+  });
+  setOptOutText(optOut);
+});
+</script>
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  _paq.push(['setDocumentTitle', document.domain + " GDPR Consent " + document.title]);
+  _paq.push(['requireCookieConsent']);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ua01.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/ua01.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="https://ua01.matomo.cloud/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+</body>
+</html>
