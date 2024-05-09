@@ -95,7 +95,27 @@
 <p>---</p>
 <p>(c) matomodelavnica, 2024-2026</p>
 <!-- Matomo -->
-<img src="https://ua01.matomo.cloud/matomo.php?idsite=1&amp;rec=1&amp;action_name=Obrazec" style="border:0;" alt="" />
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["setDocumentTitle", "Sledenje z javascript kodo na strani" + ": " + document.title]);
+        _paq.push(['setCustomVariable', 2,'url', window.location.href, 'page']);
+        _paq.push(["disableCookies"]);
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+        (function () {
+            var u = (("https:" == document.location.protocol) ? "https" : "http") + "://ua01.matomo.cloud/";
+            _paq.push(["setTrackerUrl", u + "matomo.php"]);
+            _paq.push(["setSiteId", "1"]);
+            var d = document,
+                g = d.createElement("script"),
+                s = d.getElementsByTagName("script")[0];
+            g.type = "text/javascript";
+            g.defer = true;
+            g.async = true;
+            g.src = u + "matomo.js";
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
 <!-- End Matomo Code -->
 </body>
 </html>
